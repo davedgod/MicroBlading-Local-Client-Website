@@ -23,7 +23,7 @@ const testimonials = [
       "Am economisit atât de mult timp în rutina mea zilnică de când am făcut micropigmentarea sprâncenelor. Arată impecabil în fiecare zi!",
     author: "Elena Dumitrescu",
     image:
-      "https://drive.google.com/uc?export=view&id=1ILDm0Hz6xb3CPB-wQ6IZREfD5Mu9q6BH",
+      "https://drive.google.com/uc?export=view&id=1o0TXQ5QLvMyzgfww4w6NEgfWfVlUtkZi",
   },
 ];
 
@@ -46,7 +46,7 @@ export function Testimonials() {
             <Card key={index} className="border-0 shadow-sm">
               <CardContent className="p-6">
                 <div className="flex flex-col items-center mb-4">
-                  <div className="relative w-16 h-16 rounded-full overflow-hidden mb-3">
+                  <div className="relative w-24 h-24 rounded-full overflow-hidden mb-3">
                     <Image
                       src={testimonial.image}
                       alt={testimonial.author}

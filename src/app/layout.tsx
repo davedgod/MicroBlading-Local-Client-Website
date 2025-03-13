@@ -2,12 +2,17 @@ import { TempoInit } from "@/components/tempo-init";
 import { Navbar } from "@/components/navbar";
 import { Footer } from "@/components/footer";
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Inter, Quicksand, Poppins } from "next/font/google";
 import Script from "next/script";
 import { ThemeProvider } from "@/components/theme-provider";
 import "./globals.css";
 
 const inter = Inter({ subsets: ["latin"] });
+const quicksand = Quicksand({ subsets: ["latin"] });
+const poppins = Poppins({
+  weight: ["400", "500", "600", "700"],
+  subsets: ["latin"],
+});
 
 export const metadata: Metadata = {
   title: "Jofiel Art - Salon de Micropigmentare",

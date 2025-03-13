@@ -18,10 +18,19 @@ export function Hero() {
               trăsăturile și îți oferă încredere în fiecare zi.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
-              <Button asChild size="lg">
+              <Button
+                asChild
+                size="lg"
+                className="bg-[#E5A4B9] hover:bg-[#D48FB0] text-white"
+              >
                 <Link href="/contact">Programează-te acum</Link>
               </Button>
-              <Button asChild variant="outline" size="lg">
+              <Button
+                asChild
+                variant="outline"
+                size="lg"
+                className="border-[#B68AD4] text-[#B68AD4] hover:bg-[#F0E6FA]"
+              >
                 <Link href="/servicii">Vezi serviciile noastre</Link>
               </Button>
             </div>

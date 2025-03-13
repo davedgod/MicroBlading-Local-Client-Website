@@ -5,6 +5,7 @@ import { ThemeSwitcher } from "@/components/theme-switcher";
 import Link from "next/link";
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
+import Image from "next/image";
 
 const navigation = [
   { name: "Acasă", href: "/" },
@@ -22,8 +23,10 @@ export function Navbar() {
       <Container>
         <nav className="flex items-center justify-between py-4">
           <div className="flex items-center">
-            <Link href="/" className="text-xl font-bold tracking-tight">
-              Jofiel Art
+            <Link href="/" className="flex items-center">
+              <span className="text-2xl font-logo font-bold tracking-wider bg-gradient-to-r from-[#E5A4B9] to-[#B68AD4] bg-clip-text text-transparent">
+                Jofiel Art
+              </span>
             </Link>
           </div>
           <div className="hidden md:flex md:gap-x-8">

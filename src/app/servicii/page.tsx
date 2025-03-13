@@ -24,7 +24,7 @@ const services = [
     ],
     price: "450 lei",
     image:
-      "https://drive.google.com/uc?export=view&id=12-2VNY39DVc9nkuB100I9ST9cJukWMkL",
+      "https://drive.google.com/uc?export=view&id=1ILDm0Hz6xb3CPB-wQ6IZREfD5Mu9q6BH",
   },
   {
     id: "lips",
@@ -40,7 +40,7 @@ const services = [
     ],
     price: "500 lei",
     image:
-      "https://drive.google.com/uc?export=view&id=1GMEssneonNPYI-PKuDxh5iPzO-39t_GZ",
+      "https://drive.google.com/uc?export=view&id=12-2VNY39DVc9nkuB100I9ST9cJukWMkL",
   },
   {
     id: "package",
@@ -56,7 +56,7 @@ const services = [
     ],
     price: "700 lei",
     image:
-      "https://drive.google.com/uc?export=view&id=1OQvcOH-_fqLxSyrXAwEfAvTyIGaMhHd7",
+      "https://drive.google.com/uc?export=view&id=1RBJTiO0KeaCLK6to4vsWF13L7K1zEN50",
   },
 ];
 

@@ -71,12 +71,6 @@ export default function GalleryPage() {
           </p>
         </div>
 
-        <div className="mb-8 text-center">
-          <Button asChild variant="outline" className="mr-4">
-            <Link href="/galerie/page-video">Vezi Videoclipuri</Link>
-          </Button>
-        </div>
-
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {galleryImages.map((image, index) => (
             <div key={index} className="group">

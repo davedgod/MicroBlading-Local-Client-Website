@@ -1,4 +1,7 @@
 import { NextResponse } from "next/server";
+import { Resend } from "resend";
+
+const resend = new Resend(process.env.RESEND_API_KEY);
 
 export async function POST(request: Request) {
   try {
@@ -13,13 +16,23 @@ export async function POST(request: Request) {
       );
     }
 
-    // Simulăm trimiterea emailului fără a necesita configurare reală
-    // În producție, ai putea folosi servicii precum SendGrid, Resend.com, etc.
-    console.log("Email ar fi trimis cu:", { to, subject, message });
+    // Trimite email folosind Resend
+    const { data, error } = await resend.emails.send({
+      from: "Formular Contact <onboarding@resend.dev>", // Poți schimba cu domeniul tău după verificare
+      to: [to],
+      subject: subject,
+      text: message,
+    });
 
-    // Pentru demonstrație, returnăm succes
-    // Acest lucru permite formularului să funcționeze fără configurare reală
-    return NextResponse.json({ success: true });
+    if (error) {
+      console.error("Error sending email:", error);
+      return NextResponse.json(
+        { error: "A apărut o eroare la trimiterea emailului" },
+        { status: 500 },
+      );
+    }
+
+    return NextResponse.json({ success: true, data });
   } catch (error) {
     console.error("Error sending email:", error);
     return NextResponse.json(

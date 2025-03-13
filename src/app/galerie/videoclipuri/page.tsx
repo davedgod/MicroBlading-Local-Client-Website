@@ -2,6 +2,12 @@ import { Container } from "@/components/ui/container";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
 
+export const metadata = {
+  title: "Videoclipuri - Jofiel Art",
+  description:
+    "Urmărește videoclipurile noastre pentru a vedea procedurile și rezultatele în acțiune.",
+};
+
 export default function GalleryVideoPage() {
   return (
     <main className="py-16">
