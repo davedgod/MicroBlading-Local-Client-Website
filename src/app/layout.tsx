@@ -62,8 +62,9 @@ export const metadata: Metadata = {
     ],
   },
   icons: {
-    icon: "/favicon.ico",
-    shortcut: "/favicon.ico",
+    icon: "https://drive.google.com/uc?export=view&id=1azmfKfCyTEvdqhjUTuHRWFgpn66lzFF7",
+    shortcut:
+      "https://drive.google.com/uc?export=view&id=1azmfKfCyTEvdqhjUTuHRWFgpn66lzFF7",
     apple: "/apple-touch-icon.png",
   },
   verification: {

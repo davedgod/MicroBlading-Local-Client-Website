@@ -4,6 +4,12 @@ export default function Head() {
       <link
         rel="icon"
         href="https://drive.google.com/uc?export=view&id=1azmfKfCyTEvdqhjUTuHRWFgpn66lzFF7"
+        type="image/png"
+      />
+      <link
+        rel="shortcut icon"
+        href="https://drive.google.com/uc?export=view&id=1azmfKfCyTEvdqhjUTuHRWFgpn66lzFF7"
+        type="image/png"
       />
       <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
       <meta name="viewport" content="width=device-width, initial-scale=1" />
