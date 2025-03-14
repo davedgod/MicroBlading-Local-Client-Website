@@ -1,0 +1,5 @@
+Contact: mailto:jofielartmicropigmentare@gmail.com
+Expires: 2025-12-31T23:59:59.000Z
+Preferred-Languages: ro, en
+Canonical: https://jofielart.com/.well-known/security.txt
+Policy: https://jofielart.com/privacy-policy

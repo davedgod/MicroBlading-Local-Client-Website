@@ -2,11 +2,21 @@ import { Container } from "@/components/ui/container";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import Image from "next/image";
+import { ServicesSchema } from "./schema";
 
 export const metadata = {
-  title: "Servicii - Jofiel Art",
+  title: "Servicii Micropigmentare Sprâncene și Buze București | Jofiel Art",
   description:
-    "Descoperă serviciile noastre de micropigmentare sprâncene și buze, împreună cu prețurile acestora.",
+    "Descoperă serviciile noastre profesionale de micropigmentare sprâncene și buze în București, împreună cu prețurile acestora. Tehnici avansate și rezultate naturale garantate.",
+  keywords: [
+    "micropigmentare",
+    "micropigmentare sprancene",
+    "micropigmentare buze",
+    "servicii micropigmentare",
+    "micropigmentare bucuresti",
+    "preturi micropigmentare",
+    "microblading",
+  ],
 };
 
 const services = [
@@ -63,6 +73,7 @@ const services = [
 export default function ServicesPage() {
   return (
     <main className="py-16">
+      <ServicesSchema />
       <Container>
         <div className="max-w-3xl mx-auto text-center mb-12">
           <h1 className="text-4xl font-extrabold tracking-tight lg:text-5xl mb-6">

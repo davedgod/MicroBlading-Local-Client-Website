@@ -10,12 +10,12 @@ export function Hero() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div>
             <h1 className="text-4xl font-extrabold tracking-tight lg:text-5xl mb-6">
-              Redescoperă-ți frumusețea naturală cu micropigmentarea
-              sprâncenelor și buzelor
+              Micropigmentare Sprâncene și Buze în București
             </h1>
             <p className="text-xl text-muted-foreground mb-8">
               Obține sprâncene și buze perfect definite care îți pun în valoare
-              trăsăturile și îți oferă încredere în fiecare zi.
+              trăsăturile și îți oferă încredere în fiecare zi. Servicii
+              profesionale de micropigmentare în Sector 3, București.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <Button
@@ -37,8 +37,8 @@ export function Hero() {
           </div>
           <div className="relative h-[400px] rounded-lg overflow-hidden">
             <Image
-              src="https://drive.google.com/uc?export=view&id=1GMEssneonNPYI-PKuDxh5iPzO-39t_GZ"
-              alt="Jofiel Art Micropigmentare Homepage"
+              src="https://drive.google.com/uc?export=view&id=16T3yd4YumfHaIOwmgWACXN7VLX44NcvR"
+              alt="Micropigmentare Sprâncene și Buze București - Jofiel Art"
               fill
               className="object-cover"
               priority

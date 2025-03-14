@@ -15,9 +15,63 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
-  title: "Jofiel Art - Salon de Micropigmentare",
+  title: "Micropigmentare Sprâncene și Buze București | Jofiel Art",
   description:
-    "Salon specializat în micropigmentare sprâncene și buze, oferind servicii de înaltă calitate pentru a vă pune în valoare frumusețea naturală.",
+    "Salon specializat în micropigmentare sprâncene și buze în București, oferind servicii profesionale de înaltă calitate pentru a vă pune în valoare frumusețea naturală.",
+  keywords: [
+    "micropigmentare",
+    "micropigmentare sprancene",
+    "micropigmentare buze",
+    "salon micropigmentare",
+    "micropigmentare bucuresti",
+    "jofiel art",
+    "microblading",
+  ],
+  authors: [{ name: "Jofiel Art" }],
+  creator: "Jofiel Art",
+  publisher: "Jofiel Art",
+  formatDetection: {
+    email: false,
+    address: false,
+    telephone: false,
+  },
+  openGraph: {
+    type: "website",
+    locale: "ro_RO",
+    url: "https://jofielart.com",
+    title: "Micropigmentare Sprâncene și Buze București | Jofiel Art",
+    description:
+      "Salon specializat în micropigmentare sprâncene și buze în București, oferind servicii profesionale de înaltă calitate.",
+    siteName: "Jofiel Art",
+    images: [
+      {
+        url: "https://drive.google.com/uc?export=view&id=1azmfKfCyTEvdqhjUTuHRWFgpn66lzFF7",
+        width: 1200,
+        height: 630,
+        alt: "Jofiel Art - Salon de Micropigmentare București",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Micropigmentare Sprâncene și Buze București | Jofiel Art",
+    description:
+      "Salon specializat în micropigmentare sprâncene și buze în București, oferind servicii profesionale de înaltă calitate.",
+    images: [
+      "https://drive.google.com/uc?export=view&id=1azmfKfCyTEvdqhjUTuHRWFgpn66lzFF7",
+    ],
+  },
+  icons: {
+    icon: "/favicon.ico",
+    shortcut: "/favicon.ico",
+    apple: "/apple-touch-icon.png",
+  },
+  verification: {
+    google: "google-site-verification-code",
+  },
+  alternates: {
+    canonical: "https://jofielart.com",
+  },
 };
 
 export default function RootLayout({
@@ -27,7 +81,13 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="ro" suppressHydrationWarning>
-      <Script src="https://api.tempolabs.ai/proxy-asset?url=https://storage.googleapis.com/tempo-public-assets/error-handling.js" />
+      <head>
+        <link
+          rel="icon"
+          href="https://drive.google.com/uc?export=view&id=1azmfKfCyTEvdqhjUTuHRWFgpn66lzFF7"
+        />
+        <Script src="https://api.tempolabs.ai/proxy-asset?url=https://storage.googleapis.com/tempo-public-assets/error-handling.js" />
+      </head>
       <body className={inter.className}>
         <ThemeProvider
           attribute="class"

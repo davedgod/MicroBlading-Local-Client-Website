@@ -1,15 +1,25 @@
 import { Container } from "@/components/ui/container";
 import Image from "next/image";
+import { AboutSchema } from "./schema";
 
 export const metadata = {
-  title: "Despre Noi - Jofiel Art",
+  title: "Despre Salonul de Micropigmentare Jofiel Art București",
   description:
-    "Află povestea salonului nostru de micropigmentare sprâncene și buze.",
+    "Află povestea salonului nostru de micropigmentare sprâncene și buze din București. Experiență, profesionalism și rezultate naturale garantate.",
+  keywords: [
+    "salon micropigmentare",
+    "micropigmentare bucuresti",
+    "jofiel art",
+    "despre salon micropigmentare",
+    "specialist micropigmentare",
+    "salon frumusete bucuresti",
+  ],
 };
 
 export default function AboutPage() {
   return (
     <main className="py-16">
+      <AboutSchema />
       <Container>
         <div className="max-w-3xl mx-auto text-center mb-12">
           <h1 className="text-4xl font-extrabold tracking-tight lg:text-5xl mb-6">

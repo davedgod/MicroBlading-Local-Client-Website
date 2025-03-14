@@ -1,16 +1,26 @@
 import { Container } from "@/components/ui/container";
 import { ContactForm } from "./contact-form";
 import { MapPin, Phone, Mail, Clock } from "lucide-react";
+import { ContactSchema } from "./schema";
 
 export const metadata = {
-  title: "Contact - Jofiel Art",
+  title: "Contact Salon Micropigmentare București | Jofiel Art",
   description:
-    "Contactează-ne pentru programări sau informații despre serviciile noastre de micropigmentare sprâncene și buze.",
+    "Contactează salonul nostru de micropigmentare din București pentru programări sau informații despre serviciile noastre de micropigmentare sprâncene și buze.",
+  keywords: [
+    "contact salon micropigmentare",
+    "programare micropigmentare",
+    "salon micropigmentare bucuresti",
+    "jofiel art contact",
+    "programare microblading",
+    "salon micropigmentare sector 3",
+  ],
 };
 
 export default function ContactPage() {
   return (
     <main className="py-16">
+      <ContactSchema />
       <Container>
         <div className="max-w-3xl mx-auto text-center mb-12">
           <h1 className="text-4xl font-extrabold tracking-tight lg:text-5xl mb-6">

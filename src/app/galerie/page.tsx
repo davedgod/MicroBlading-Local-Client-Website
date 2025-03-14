@@ -2,11 +2,21 @@ import { Container } from "@/components/ui/container";
 import Image from "next/image";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
+import { GallerySchema } from "./schema";
 
 export const metadata = {
-  title: "Galerie - Jofiel Art",
+  title:
+    "Galerie Rezultate Micropigmentare Sprâncene și Buze | Jofiel Art București",
   description:
-    "Explorează galeria noastră cu rezultate înainte și după procedurile de micropigmentare sprâncene și buze.",
+    "Explorează galeria noastră cu rezultate înainte și după procedurile de micropigmentare sprâncene și buze realizate în salonul nostru din București.",
+  keywords: [
+    "rezultate micropigmentare",
+    "poze micropigmentare",
+    "inainte si dupa micropigmentare",
+    "galerie micropigmentare",
+    "micropigmentare bucuresti",
+    "rezultate microblading",
+  ],
 };
 
 const galleryImages = [
@@ -60,6 +70,7 @@ const galleryImages = [
 export default function GalleryPage() {
   return (
     <main className="py-16">
+      <GallerySchema />
       <Container>
         <div className="max-w-3xl mx-auto text-center mb-12">
           <h1 className="text-4xl font-extrabold tracking-tight lg:text-5xl mb-6">
