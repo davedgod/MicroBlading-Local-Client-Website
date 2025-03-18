@@ -1,6 +1,7 @@
 import { TempoInit } from "@/components/tempo-init";
 import { Navbar } from "@/components/navbar";
 import { Footer } from "@/components/footer";
+import { FloatingContact } from "@/components/floating-contact";
 import type { Metadata } from "next";
 import { Inter, Quicksand, Poppins } from "next/font/google";
 import Script from "next/script";
@@ -26,6 +27,7 @@ export const metadata: Metadata = {
     "micropigmentare bucuresti",
     "jofiel art",
     "microblading",
+    "micropigmentare sector 3",
   ],
   authors: [{ name: "Jofiel Art" }],
   creator: "Jofiel Art",
@@ -77,9 +79,9 @@ export const metadata: Metadata = {
 
 export default function RootLayout({
   children,
-}: Readonly<{
+}: {
   children: React.ReactNode;
-}>) {
+}) {
   return (
     <html lang="ro" suppressHydrationWarning>
       <head>
@@ -89,7 +91,7 @@ export default function RootLayout({
         />
         <Script src="https://api.tempolabs.ai/proxy-asset?url=https://storage.googleapis.com/tempo-public-assets/error-handling.js" />
       </head>
-      <body className={inter.className}>
+      <body className={poppins.className}>
         <ThemeProvider
           attribute="class"
           defaultTheme="light"
@@ -99,6 +101,7 @@ export default function RootLayout({
           <Navbar />
           {children}
           <Footer />
+          <FloatingContact />
           <TempoInit />
         </ThemeProvider>
       </body>
